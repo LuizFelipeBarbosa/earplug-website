@@ -166,7 +166,7 @@ export default function Home() {
               <div className="overflow-hidden">
                 <img src={a.img} alt={a.alt} className="aspect-[4/5] w-full object-cover" loading="lazy" />
               </div>
-              <div className="py-6">
+              <div className="px-5 py-7 md:px-6 md:py-8 lg:px-8">
                 <div className="flex items-baseline justify-between">
                   <div className="flex items-baseline gap-3">
                     <span className="font-mono2 text-[11px] text-[var(--ep-accent)]">{a.index}</span>
