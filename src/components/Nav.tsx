@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react'
 import { Link, useLocation } from 'react-router'
 import { ArrowUpRight, Menu, X } from 'lucide-react'
 
-const JOIN_URL = 'https://earplug.dev/'
+const JOIN_URL = 'https://earplug.app/'
 
 export default function Nav() {
   const [open, setOpen] = useState(false)

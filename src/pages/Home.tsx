@@ -5,7 +5,7 @@ import Footer from '../components/Footer'
 import Marquee from '../components/Marquee'
 import { useReveal } from '../hooks/useReveal'
 
-const JOIN_URL = 'https://earplug.dev/'
+const JOIN_URL = 'https://earplug.app/'
 
 const audiences = [
   {
