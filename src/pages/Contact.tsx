@@ -66,7 +66,7 @@ export default function Contact() {
             </span>
           </h1>
           <p className="fade-up mt-6 max-w-md text-base leading-relaxed text-[var(--ep-muted)]" style={{ ['--d' as string]: '850ms' }}>
-            Booking a show, joining the team, partnering up, or just want to talk music — send us a
+            Booking a show, joining the team, partnering up, or just want to talk music? Send us a
             message via:
           </p>
         </div>

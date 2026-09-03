@@ -37,7 +37,7 @@ const problems = [
     img: '/assets/card1.jpg',
     alt: 'Bassist playing inches from the crowd',
     heading: 'Talented local musicians struggle to get discovered.',
-    copy: 'Great bands are playing to empty rooms — not because the music is missing, but because the connection is.',
+    copy: 'Great bands are playing to empty rooms, not because the music is missing, but because the connection is.',
   },
   {
     index: '02',
@@ -104,7 +104,7 @@ export default function Home() {
 
         <div className="relative z-10 flex items-end justify-between px-5 pb-8 md:px-10">
           <p className="fade-up font-mono2 max-w-[240px] text-[11px] leading-relaxed text-white/70" style={{ ['--d' as string]: '900ms' }}>
-            Live music, reconnected — musicians, venues & fans on one platform.
+            Live music, reconnected: musicians, venues & fans on one platform.
           </p>
           <div className="fade-up flex flex-col items-center gap-2" style={{ ['--d' as string]: '1000ms' }}>
             <span className="font-mono2 text-[10px] text-white/60">Scroll</span>
@@ -151,7 +151,7 @@ export default function Home() {
           <div className="absolute inset-0 flex flex-col justify-between p-6 md:p-10">
             <h2 className="font-display text-6xl font-bold md:text-8xl">Who are you?</h2>
             <p className="max-w-sm self-end text-right text-sm leading-relaxed text-white/85 md:text-base">
-              Artist, venue, or fan — EarPlug plugs you straight into your local live music scene.
+              Whether you are an artist, venue, or fan, EarPlug plugs you straight into your local live music scene.
             </p>
           </div>
         </div>
@@ -188,7 +188,7 @@ export default function Home() {
           <p className="font-mono2 reveal text-[11px] text-[var(--ep-accent)]">Why EarPlug exists</p>
           <p className="reveal mt-6 text-lg leading-relaxed text-white/85 md:text-2xl" style={{ ['--reveal-delay' as string]: '100ms' }}>
             Born from college jam sessions and late-night gigs, EarPlug started with one
-            realization — live music is supposed to bring people together.
+            realization: live music is supposed to bring people together.
           </p>
           <p className="font-display reveal mt-8 text-5xl font-bold md:text-7xl" style={{ ['--reveal-delay' as string]: '200ms' }}>
             But it often <span className="text-stroke-accent">doesn&rsquo;t.</span>
@@ -232,7 +232,7 @@ export default function Home() {
 
         <div className="mx-auto mt-24 max-w-4xl text-center md:mt-36">
           <p className="reveal text-xl leading-relaxed text-white/90 md:text-3xl md:leading-snug">
-            So we built EarPlug to reconnect these communities — one platform that bridges{' '}
+            So we built EarPlug to reconnect these communities with one platform that bridges{' '}
             <span className="text-[var(--ep-accent)]">artists</span>,{' '}
             <span className="text-[var(--ep-accent)]">venues</span> and{' '}
             <span className="text-[var(--ep-accent)]">fans</span>, and makes live music accessible
@@ -257,7 +257,7 @@ export default function Home() {
           <span className="font-display text-[40vw] font-bold leading-none text-black">EP</span>
         </div>
         <div className="relative">
-          <p className="font-mono2 reveal text-[11px] font-semibold">Stop missing out — get ready for EarPlug</p>
+          <p className="font-mono2 reveal text-[11px] font-semibold">Stop missing out. Get ready for EarPlug</p>
           <h2 className="font-display reveal mt-4 text-[18vw] font-bold leading-[0.85] md:text-[13vw]" style={{ ['--reveal-delay' as string]: '100ms' }}>
             Join us
           </h2>
