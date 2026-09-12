@@ -1,36 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Antonio:wght@100..700&family=Space+Grotesk:wght@300..700&family=Azeret+Mono:wght@400;500;600&display=swap');
 
 /* ---------- PP Telegraf (self-hosted, licensed) ----------
-   Drop the font files into public/fonts/ using these names.
-   Until they exist the browser falls back to the Google fonts above. */
+   The family ships as Ultralight / Regular / Ultrabold, so each face covers a
+   weight range: font-medium resolves to Regular, font-semibold and font-bold to Ultrabold. */
 @font-face {
   font-family: 'PP Telegraf';
-  src: url('/fonts/PPTelegraf-Regular.woff2') format('woff2'), url('/fonts/PPTelegraf-Regular.otf') format('opentype');
-  font-weight: 400;
+  src: url('/fonts/PPTelegraf-Ultralight.woff2') format('woff2');
+  font-weight: 100 300;
   font-display: swap;
 }
 @font-face {
   font-family: 'PP Telegraf';
-  src: url('/fonts/PPTelegraf-Medium.woff2') format('woff2'), url('/fonts/PPTelegraf-Medium.otf') format('opentype');
-  font-weight: 500;
+  src: url('/fonts/PPTelegraf-Regular.woff2') format('woff2');
+  font-weight: 400 500;
   font-display: swap;
 }
 @font-face {
   font-family: 'PP Telegraf';
-  src: url('/fonts/PPTelegraf-SemiBold.woff2') format('woff2'), url('/fonts/PPTelegraf-SemiBold.otf') format('opentype');
-  font-weight: 600;
-  font-display: swap;
-}
-@font-face {
-  font-family: 'PP Telegraf';
-  src: url('/fonts/PPTelegraf-Bold.woff2') format('woff2'), url('/fonts/PPTelegraf-Bold.otf') format('opentype');
-  font-weight: 700;
-  font-display: swap;
-}
-@font-face {
-  font-family: 'PP Telegraf';
-  src: url('/fonts/PPTelegraf-UltraBold.woff2') format('woff2'), url('/fonts/PPTelegraf-UltraBold.otf') format('opentype');
-  font-weight: 800;
+  src: url('/fonts/PPTelegraf-Ultrabold.woff2') format('woff2');
+  font-weight: 600 900;
   font-display: swap;
 }
 
