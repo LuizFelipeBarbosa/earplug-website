@@ -95,7 +95,7 @@ export default function Home() {
             ))}
           </h1>
           <p
-            className="fade-up font-mono2 mt-6 text-xs tracking-[0.35em] text-white/90 md:text-sm"
+            className="fade-up font-mono2 mt-1 text-xs tracking-[0.35em] text-white/90 md:-mt-1 md:text-sm"
             style={{ ['--d' as string]: '750ms' }}
           >
             Listen local.
