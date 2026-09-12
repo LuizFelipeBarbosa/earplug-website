@@ -24,13 +24,12 @@ export default function Nav() {
       <header className="fixed inset-x-0 top-0 z-50">
         <div className="pointer-events-none absolute inset-x-0 top-0 h-24 bg-gradient-to-b from-black/70 to-transparent" />
         <nav className="relative flex items-center justify-between px-5 py-4 md:px-10 md:py-6">
-          <Link to="/" className="group flex items-center gap-2.5" aria-label="EarPlug home">
+          <Link to="/" className="flex items-center" aria-label="EarPlug home">
             <img
-              src="/assets/ear-logo.png"
-              alt="EarPlug logo"
-              className="h-9 w-9 object-contain transition-transform duration-500 group-hover:rotate-[20deg]"
+              src="/assets/logo-white.png"
+              alt="EarPlug"
+              className="h-8 w-auto object-contain transition-opacity duration-300 hover:opacity-80 md:h-9"
             />
-            <span className="font-display text-lg font-semibold tracking-wide">EarPlug</span>
           </Link>
 
           <div className="flex items-center gap-2.5 md:gap-3">

@@ -47,7 +47,7 @@ export default function Footer() {
 
       {/* giant outline wordmark */}
       <div className="overflow-hidden px-2">
-        <div className="font-display text-stroke select-none text-center text-[18.5vw] font-bold leading-[0.8] tracking-tight transition-colors duration-700 hover:text-[var(--ep-accent)] hover:[-webkit-text-stroke:0px]">
+        <div className="font-display text-stroke select-none text-center text-[18.5vw] font-bold normal-case leading-[0.8] tracking-tight pb-[0.16em] transition-colors duration-700 hover:text-[var(--ep-accent)] hover:[-webkit-text-stroke:0px]">
           EarPlug
         </div>
       </div>

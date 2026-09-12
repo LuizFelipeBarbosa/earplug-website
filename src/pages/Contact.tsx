@@ -26,7 +26,7 @@ const channels = [
   {
     index: '04',
     label: 'LinkedIn',
-    value: 'EarPlug',
+    value: <span className="normal-case">EarPlug</span>,
     href: 'https://www.linkedin.com/company/109913078/',
   },
 ]
@@ -51,15 +51,15 @@ export default function Contact() {
           <p className="font-mono2 fade-up text-[11px] text-[var(--ep-accent)]" style={{ ['--d' as string]: '200ms' }}>
             Want to get involved?
           </p>
-          <h1 className="font-display mt-4 text-[16vw] font-bold leading-[0.85] md:text-[11vw]">
+          <h1 className="font-display mt-4 text-[13vw] font-bold leading-[0.85] md:text-[11vw]">
             {'CONTACT'.split('').map((letter, i) => (
-              <span key={i} className="inline-block overflow-hidden align-bottom">
+              <span key={i} className="inline-block overflow-hidden pb-[0.14em] align-bottom">
                 <span className="hero-letter" style={{ ['--d' as string]: `${250 + i * 60}ms` }} aria-hidden="true">
                   {letter}
                 </span>
               </span>
             ))}{' '}
-            <span className="inline-block overflow-hidden align-bottom">
+            <span className="inline-block overflow-hidden pb-[0.14em] align-bottom">
               <span className="hero-letter text-[var(--ep-accent)]" style={{ ['--d' as string]: '700ms' }} aria-hidden="true">
                 US
               </span>

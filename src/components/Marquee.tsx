@@ -1,5 +1,7 @@
+import type { ReactNode } from 'react'
+
 interface MarqueeProps {
-  items: string[]
+  items: ReactNode[]
   reverse?: boolean
   speed?: number
   className?: string

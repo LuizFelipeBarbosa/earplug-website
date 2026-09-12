@@ -1,5 +1,39 @@
 @import url('https://fonts.googleapis.com/css2?family=Antonio:wght@100..700&family=Space+Grotesk:wght@300..700&family=Azeret+Mono:wght@400;500;600&display=swap');
 
+/* ---------- PP Telegraf (self-hosted, licensed) ----------
+   Drop the font files into public/fonts/ using these names.
+   Until they exist the browser falls back to the Google fonts above. */
+@font-face {
+  font-family: 'PP Telegraf';
+  src: url('/fonts/PPTelegraf-Regular.woff2') format('woff2'), url('/fonts/PPTelegraf-Regular.otf') format('opentype');
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'PP Telegraf';
+  src: url('/fonts/PPTelegraf-Medium.woff2') format('woff2'), url('/fonts/PPTelegraf-Medium.otf') format('opentype');
+  font-weight: 500;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'PP Telegraf';
+  src: url('/fonts/PPTelegraf-SemiBold.woff2') format('woff2'), url('/fonts/PPTelegraf-SemiBold.otf') format('opentype');
+  font-weight: 600;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'PP Telegraf';
+  src: url('/fonts/PPTelegraf-Bold.woff2') format('woff2'), url('/fonts/PPTelegraf-Bold.otf') format('opentype');
+  font-weight: 700;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'PP Telegraf';
+  src: url('/fonts/PPTelegraf-UltraBold.woff2') format('woff2'), url('/fonts/PPTelegraf-UltraBold.otf') format('opentype');
+  font-weight: 800;
+  font-display: swap;
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -45,7 +79,7 @@
   body {
     background-color: var(--ep-bg);
     color: var(--ep-ink);
-    font-family: 'Space Grotesk', ui-sans-serif, system-ui, sans-serif;
+    font-family: 'PP Telegraf', 'Space Grotesk', ui-sans-serif, system-ui, sans-serif;
     -webkit-font-smoothing: antialiased;
     overflow-x: hidden;
   }
@@ -70,7 +104,7 @@
 
 @layer utilities {
   .font-display {
-    font-family: 'Antonio', 'Arial Narrow', sans-serif;
+    font-family: 'PP Telegraf', 'Antonio', 'Arial Narrow', sans-serif;
     text-transform: uppercase;
     line-height: 0.88;
     letter-spacing: -0.01em;
@@ -79,6 +113,11 @@
     font-family: 'Azeret Mono', ui-monospace, monospace;
     text-transform: uppercase;
     letter-spacing: 0.14em;
+  }
+  /* Brand name is always written "EarPlug", even inside uppercase display/mono text */
+  .font-display.normal-case,
+  .font-mono2.normal-case {
+    text-transform: none;
   }
   .text-stroke {
     -webkit-text-stroke: 1.5px rgba(242, 242, 239, 0.4);
@@ -130,12 +169,12 @@
 
 /* ---------- hero letter stagger ---------- */
 @keyframes rise-in {
-  from { transform: translateY(110%); }
+  from { transform: translateY(130%); }
   to { transform: translateY(0); }
 }
 .hero-letter {
   display: inline-block;
-  transform: translateY(110%);
+  transform: translateY(130%);
   animation: rise-in 1s cubic-bezier(0.22, 1, 0.36, 1) forwards;
   animation-delay: var(--d, 0ms);
 }

@@ -58,7 +58,7 @@ const problems = [
 export default function Home() {
   useReveal()
 
-  const word = 'EARPLUG'.split('')
+  const word = 'EarPlug'.split('')
 
   return (
     <div className="grain bg-[var(--ep-bg)] text-[var(--ep-ink)]">
@@ -79,11 +79,11 @@ export default function Home() {
 
         <div className="relative z-10 flex flex-1 flex-col items-center justify-center px-4">
           <h1
-            className="font-display select-none text-center text-[19vw] font-bold leading-[0.82] tracking-tight md:text-[17vw]"
+            className="font-display select-none text-center text-[19vw] font-bold normal-case leading-[0.82] tracking-tight md:text-[17vw]"
             aria-label="EarPlug"
           >
             {word.map((letter, i) => (
-              <span key={i} className="inline-block overflow-hidden align-bottom">
+              <span key={i} className="inline-block overflow-hidden pb-[0.14em] align-bottom">
                 <span
                   className="hero-letter"
                   style={{ ['--d' as string]: `${150 + i * 70}ms` }}
@@ -185,7 +185,7 @@ export default function Home() {
       {/* ============ STORY ============ */}
       <section className="border-t border-[var(--ep-line)] px-5 py-24 md:px-10 md:py-36">
         <div className="mx-auto max-w-3xl text-center">
-          <p className="font-mono2 reveal text-[11px] text-[var(--ep-accent)]">Why EarPlug exists</p>
+          <p className="font-mono2 reveal text-[11px] text-[var(--ep-accent)]">Why <span className="normal-case">EarPlug</span> exists</p>
           <p className="reveal mt-6 text-lg leading-relaxed text-white/85 md:text-2xl" style={{ ['--reveal-delay' as string]: '100ms' }}>
             Born from college jam sessions and late-night gigs, EarPlug started with one
             realization: live music is supposed to bring people together.
@@ -244,7 +244,7 @@ export default function Home() {
       {/* ============ SECOND TICKER ============ */}
       <div className="border-y border-[var(--ep-line)] py-4">
         <Marquee
-          items={['Stop missing out', 'Get ready for EarPlug']}
+          items={['Stop missing out', <>Get ready for <span className="normal-case">EarPlug</span></>]}
           speed={26}
           reverse
           className="font-mono2 text-sm text-[var(--ep-muted)]"
@@ -257,7 +257,7 @@ export default function Home() {
           <span className="font-display text-[40vw] font-bold leading-none text-black">EP</span>
         </div>
         <div className="relative">
-          <p className="font-mono2 reveal text-[11px] font-semibold">Stop missing out. Get ready for EarPlug</p>
+          <p className="font-mono2 reveal text-[11px] font-semibold">Stop missing out. Get ready for <span className="normal-case">EarPlug</span></p>
           <h2 className="font-display reveal mt-4 text-[18vw] font-bold leading-[0.85] md:text-[13vw]" style={{ ['--reveal-delay' as string]: '100ms' }}>
             Join us
           </h2>
