@@ -244,7 +244,7 @@ export default function Home() {
       {/* ============ SECOND TICKER ============ */}
       <div className="border-y border-[var(--ep-line)] py-4">
         <Marquee
-          items={['Stop missing out', <>Get ready for <span className="normal-case">EarPlug</span></>]}
+          items={['Stop missing out', <><span className="normal-case">EarPlug</span> is live</>, 'Now on earplug.app']}
           speed={26}
           reverse
           className="font-mono2 text-sm text-[var(--ep-muted)]"
@@ -257,9 +257,9 @@ export default function Home() {
           <span className="font-display text-[40vw] font-bold leading-none text-black">EP</span>
         </div>
         <div className="relative">
-          <p className="font-mono2 reveal text-[11px] font-semibold">Stop missing out. Get ready for <span className="normal-case">EarPlug</span></p>
+          <p className="font-mono2 reveal text-[11px] font-semibold">Stop missing out. <span className="normal-case">EarPlug</span> is live at earplug.app</p>
           <h2 className="font-display reveal mt-4 text-[18vw] font-bold leading-[0.85] md:text-[13vw]" style={{ ['--reveal-delay' as string]: '100ms' }}>
-            Join us
+            Try it now
           </h2>
           <div className="reveal mt-10 flex flex-wrap items-center gap-6" style={{ ['--reveal-delay' as string]: '200ms' }}>
             <a
@@ -268,11 +268,11 @@ export default function Home() {
               rel="noreferrer"
               className="group inline-flex items-center gap-3 rounded-full bg-[#0a0a0b] px-8 py-4 font-mono2 text-xs text-white transition-transform duration-300 hover:scale-[1.04]"
             >
-              Join the waitlist
+              Open the app
               <ArrowUpRight className="h-4 w-4 transition-transform duration-300 group-hover:-translate-y-0.5 group-hover:translate-x-0.5" />
             </a>
             <Link to="/contact" className="link-line font-mono2 text-xs font-semibold">
-              Or talk to us first
+              Or talk to us
             </Link>
           </div>
         </div>

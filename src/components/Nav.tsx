@@ -39,7 +39,7 @@ export default function Nav() {
               rel="noreferrer"
               className="font-mono2 rounded-full border border-white/30 px-4 py-2 text-[11px] transition-colors duration-300 hover:border-[var(--ep-accent)] hover:bg-[var(--ep-accent)] hover:text-black md:px-5 md:text-xs"
             >
-              Join us
+              Open the app
             </a>
             <Link
               to="/contact"
@@ -101,7 +101,7 @@ export default function Nav() {
           >
             <span className="font-mono2 text-xs text-[var(--ep-accent)]">03</span>
             <span className="font-display text-6xl font-semibold transition-all duration-500 group-hover:translate-x-3 group-hover:text-[var(--ep-accent)] md:text-8xl">
-              Join us
+              Open the app
             </span>
             <ArrowUpRight className="ml-auto h-8 w-8 opacity-0 transition-all duration-500 group-hover:opacity-100 md:h-12 md:w-12" />
           </a>
